@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="alarm.css">
+  <title>Document</title>
+</head>
+<body>
+ <div id="main">
+
+ 
+  <h1 class="heading" style="background-color: blueviolet;">
+    My Alarm Clock
+  </h1>
+  <div >
+   <h2 class="heading" >
+    Current Time:
+   </h2>
+    <h3 id="current"></h3>
+  </div>
+  <h3 class="heading">
+    Set Alarm Time:
+  </h3>
+  <div id="input">
+    <input type="datetime-local" id="local"> 
+  </div>
+  <div id='buttonHolder'>
+    <div>
+      <button  id='setButton' >Set Alarm</button>
+      <!-- onClick='alarmSet() -->
+    </div>
+    <div id="clearoption">
+      <div>
+        <button  id='clearButton' onclick="cancelalarm()">Clear Alarm</button>
+        <!-- onClick='alarmClear()'S -->
+      </div>
+      <div>
+        <button  id='snooze' style="display: none;"  onclick="snooze()">Snooze</button>
+        <!-- onClick='alarmClear()'S -->
+      </div>
+    </div>
+ 
+  </div>
+</div>
+ 
+  
+  <script src="alarm.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
